@@ -6,3 +6,4 @@
   <li>Analyzing existing playlists from a user and creating a playlist with songs from the same artists.</li>
   <li>Adding new music to existing playlists based off of provided moods.</li>
 </ul>
+<p>Playlistify is hosted via netlify and can be found at <a href="https://plaza-playlistify.netlify.app/">this url</a></p>
