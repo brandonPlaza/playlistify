@@ -16,7 +16,7 @@ export default function AccountPage() {
             <h2 className={signika.className}><a href="/">Playlistify</a></h2>
             <ul>
                 <li><Link className={signika.className} href="https://github.com/brandonPlaza">My Github</Link></li>
-                <li><Link className={signika.className} href="/">Log Out</Link></li>
+                <li><button className={signika.className}>Log Out</button></li>
             </ul>
         </nav>
       </main>

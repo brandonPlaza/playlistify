@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
@@ -8,19 +10,7 @@ import styles from "./page.module.css";
 
 import {signika} from "../utils/fonts"
 
-// async function spotifySignIn() {
-//   const res = await fetch(
-//     SPOTIFY_ACCOUNTS_URL,{
-//     method:'POST',
-//     headers:{
-//       "Content-Type":"application/x-www-form-urlencoded",
-//     },
-//     body:`grant_type=client_credentials&client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`
-//   });
-//   const data = res.json();
-
-//   return data;
-// }
+import {spotifyAuthorizationRequest} from "../utils/requests"
 
 export default function Home() {
   return (
@@ -30,7 +20,7 @@ export default function Home() {
             <h2 className={signika.className}><a href="/">Playlistify</a></h2>
             <ul>
                 <li><Link className={signika.className} href="https://github.com/brandonPlaza">My Github</Link></li>
-                <li><Link className={signika.className} href="/">Sign In</Link></li>
+                <li><button className={signika.className} onClick={()=>{spotifyAuthorizationRequest()}}>Sign In</button></li>
             </ul>
         </nav>
       </main>

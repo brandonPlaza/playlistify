@@ -1,0 +1,29 @@
+.navMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 50px;
+    background-color: var(--secondarycolor);
+  }
+  
+  .navMain h2{
+    margin: 0rem 0rem 0rem 1rem;
+  }
+  
+  .navMain ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navMain li{
+    display: inline-block;
+    margin: 0rem 1rem 0rem 0rem;
+  }
+  
+  .navMain button,
+  .navMain a{
+    color: var(--primarycolor);
+    font-weight: 600;
+  }

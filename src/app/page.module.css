@@ -22,6 +22,7 @@
   margin: 0rem 1rem 0rem 0rem;
 }
 
+.navMain button,
 .navMain a{
   color: var(--primarycolor);
   font-weight: 600;
